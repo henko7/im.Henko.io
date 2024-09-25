@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henko Holl - Software Engineering Student</title>
+    <style>
+        body {
+           
+            line-height: 1.6;
+            overflow-x: hidden; 
+            margin: 20px; /* Set margin to 0 to eliminate the gap */
+            padding: 100px; /* Adjust padding for overall spacing */
+            
+        }
+        header {
+            background-color: #b7b7b7;
+            padding: 10px 20px; /* Adjust padding */
+        }
+        section {
+            display: flex;
+            align-items: center;
+            margin: 50px 0; /* Add margin between sections */
+            border-bottom: 3px solid rgb(255, 157, 157);
+        }
+        h1, h2 {
+            color: #000000;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            margin: 10px 0; /* Reduce margin for headings */
+            padding-left: 30px;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            padding: 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        p,a,ul {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            flex: 1; /* Allow text to take up remaining space */
+            margin: 0 20px; /* Add margin for spacing */
+            padding: 20px;
+        }
+        
+        /* Navigation styles */
+        .nav-container {
+            position: fixed;
+            left: -200px; /* Hidden off-screen */
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            transition: left 0.3s; /* Smooth transition */
+            z-index: 1000; /* Ensure it appears on top */
+        }
+
+        /* Show the navigation when hovered */
+        .nav-trigger:hover + .nav-container,
+        .nav-container:hover {
+            left: 0; /* Bring navigation into view */
+        }
+
+        .nav-container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-container ul li {
+            margin: 20px 0;
+        }
+
+        .nav-container ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block; /* Full clickable area */
+        }
+
+        .nav-container ul li a:hover {
+            background-color: #555; /* Highlight on hover */
+        }
+
+        /* Trigger area */
+        .nav-trigger {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 20px; /* Narrow area to trigger nav */
+            height: 100%;
+            z-index: 1100; /* Ensure it is above the nav */
+        }
+
+        /* Image styles */
+        .image-side {
+            width: 300px; /* Fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15px;
+            margin: 0 20px; /* Add margin for spacing */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav-trigger"></div> <!-- Invisible area to trigger nav -->
+
+    <div class="nav-container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#key-skills">Key Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#social-links">My Social Links</a></li>
+        </ul>
+    </div>
+
+  
+       
+        <header>
+            <div style="display: flex; align-items: center;">
+                <aside style="padding: 0px; margin-right: 10px;">
+                    <img src="Images/BC.png" style="border-radius: 8px; height: auto; width: 250px;">
+                </aside>
+                <h1 style="text-align: left;">Henko Holl - Aspiring Software Engineer</h1>
+            </div>
+            <section id="home" style="border-bottom: 3px solid rgb(255, 255, 255);">
+                <div style="flex: 1; padding: 20px;">
+                    <h2></h2>
+                    <p style="font-size: 20px; text-align: left;">
+                        I'M NOT JUST LOOKING FOR A JOB<br><br>
+                        I'M SEEKING A PARTNERSHIP.<br><br>
+                        I BELIEVE IN GROWING WITH A COMPANY, ALIGNING OUR GOALS
+                        FOR MUTUAL SUCCESS, AND <br> MAKING A POSITIVE IMPACT WHEREVER WE GO.
+                    </p>
+                </div>
+                <aside style="padding-right: 200px;">
+                    <img src="Images/Henko_1.webp" class="image-side" style="border-radius: 15px;">
+                </aside>
+            </section>
+        </header>
+        
+
+    <section id="work-experience">
+        <aside>
+            <img src="Images/Henko_business.webp" class="image-side">
+        </aside>
+        
+        <div>
+            <h2>Work Experience</h2>
+            <p><strong>Lead Game Developer at OneVerse (2021-2022)<br><br>
+            As Lead Game Developer for OneVerse, I utilized Unity and Blender to design and <br> code character movements, props, and maps.I also contributed to the <br>development of NFTs, helping the company enter the emerging<br> digital asset space.</strong></p>
+        </div>
+    </section>
+
+    <section id="key-skills">
+        <div>
+            <h2>Key Skills</h2>
+            <ul>
+                <li>Google Workspace</li>
+                <li>Communication Skills</li>
+                <li>Problem-Solving</li>
+                <li>Programming (Delphi, HTML, CSS, C#, SQL, JavaScript, Python)</li>
+                <li>Linear Programming</li>
+                <li>Market Research</li>
+                <li>Customer Relations</li>
+                <li>Application Development</li>
+                <li>Testing and Debugging</li>
+                <li>Fluent in English and Afrikaans</li>
+            </ul>
+        </div>
+        <aside style="margin-left: 100px;">
+            <img src="Images/Henko_tuckshop.webp" style="height: auto; width: 500px; border-radius: 15px;">
+        </aside>
+    </section>
+
+    <section id="education">
+        <div>
+            <h2>Education</h2>
+            <p><strong>Curro Hazeldean Primary School</strong><br>
+            2008-2016</p>
+
+            <p><strong>Curro Hazeldean College</strong><br>
+            2017-2018</p>
+
+            <p><strong>Die Hoërskool Menlopark</strong><br>
+            National Senior Certificate (NSC) - 2019-2021</p>
+
+            <p style="border:2px solid black ;border-radius: 7px;"><strong>Belgium Campus iTversity</strong><br>
+            Bachelor of Science in Computing - 2022-2024 (expected)</p>
+        </div>
+        <aside style="padding-top: 50px;">
+            <img src="Images/Henko_aboutMe.webp" style="height: auto; width: 320px; border-radius: 15px;">
+        </aside>
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>I was born and raised in Pretoria East alongside my three older brothers.<br>
+            My passion for programming began at age 15 after attending a game design workshop at Open Window.<br>
+            The ability to create functions that execute precisely every time sparked my enthusiasm for coding.<br>
+
+            As an introvert, I prioritize self-improvement and productive activities.<br><br>
+            I maintain an active, healthy lifestyle and combined my passion for motorbikes with entrepreneurship<br>
+            by starting a buy-and-sell business to fund my student expenses.<br>
+
+            Beyond technical interests, I enjoy cooking Italian cuisine and aspire to visit Belgium.<br>
+            My favorite film, *Catch Me If You Can*, reflects my appreciation for ingenuity and ambition.</p>
+        </div>
+    </section>
+
+    <section id="social-links">
+        <div>
+            <h2>My Social Links</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/henko-holl-4279a01b2" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/henko7?tab=repositories" target="_blank">Github</a></li>
+                <li><a href="PDF/henko_holl_CV.pdf" target="_blank">CV</a></li>
+                <li><a href="https://github.com/henko7/henko_holl_poker_game" target="_blank">Poker Game</a></li>
+                <li><a href="https://github.com/henko7/henko_holl_codewars" target="_blank">Codewars</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 Henko Holl</p>
+        <h3  style="text-align: left; padding-left: 10px;">Email: Henko@holl.co.za</h3>
+        <h3  style="text-align: left; padding-left: 10px;">Phone: 082-388-1740</h3>
+        <h3  style="text-align: left; padding-left: 10px;">Address: Silver Stream Estate, Silver Ridge, Pretoria East, Gauteng</h3>
+        
+
+    </footer>
+</body>
+</html>
